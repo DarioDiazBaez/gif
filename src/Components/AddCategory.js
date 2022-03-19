@@ -21,15 +21,16 @@ export const AddCategory = ( {setCategories} ) => {
     }
 
     return (
-        <form onSubmit={ handleSubmit }>
-            <input
-              type="text"
-              value={ inputValue }
-              onChange={ handleInputChange }>
-            </input>
-        </form>  
-    )
-}
+
+<form className="input-group animate__animated animate__rubberBand" onSubmit={ handleSubmit }>
+  <input 
+    type="text"
+    className="form-control"
+    placeholder="GIF"
+    value={ inputValue }
+    onChange={ handleInputChange }>
+  </input>
+</form>)}
 
 AddCategory.propTypes = {
     setCategories: PropTypes.func.isRequired

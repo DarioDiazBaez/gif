@@ -1,14 +1,14 @@
-
 import React from 'react'
+import "../GifExpertApp.css"
 
 export const GifGridItem = ( {title, url} ) => {
 
-    //  console.log(title, url);
 
     return (
-        <div className="card animate__animated animate__wobble">
-            <img src={ url } alt={ title } />
-            <p>{ title }</p>
+        <div className=" animate__animated animate__tada card mx-2 my-2 fondo2" style={{width: "18rem"}}>
+            <a href={url} target="_blank" className="d-flex justify-content-center">
+                <img className="img-fluid" src={ url } alt={ title } title={title} style={{width: "100vw",height: "45vh"}}/>
+            </a>
         </div>
     )
 }
